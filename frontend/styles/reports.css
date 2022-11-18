@@ -1,0 +1,83 @@
+.t-body {
+    margin: 0;
+}
+
+.info-message {
+    white-space: pre-wrap;
+    word-break: break-all;
+    text-align: justify;
+    color: #0e375e;
+}
+
+.t-rec_pb_30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.zo__blue {
+    border-color: #0e375e;
+    color: #0e375e;
+}
+
+.t-input {
+    border: 1px solid;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.t-text_md p {
+    text-align: left;
+}
+
+.t-submit {
+    color: #ffffff;
+    background-color: #0e375e;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.t-submit:hover {
+    background-color: #144c81;
+}
+
+#rec460377893 input::-webkit-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec460377893 input::-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec460377893 input:-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec460377893 input:-ms-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec460377893 textarea::-webkit-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec460377893 textarea::-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec460377893 textarea:-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec460377893 textarea:-ms-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}

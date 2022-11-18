@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Moder-App</title>
+    <!-- tilda imports -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../resources/Mask_Group.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../resources/Mask_Group.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../resources/Mask_Group.png">
+    <link rel="apple-touch-startup-image" href="../resources/Mask_Group.png">
+    <link rel="stylesheet" href="../styles/tilda/tilda-grid-3.0.min.css" type="text/css" media="all"
+        onerror="this.loaderr='y';" />
+    <link href="../styles/tilda/fonts.googleapis-css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/tilda/tilda-forms-1.0.min.css" type="text/css" media="all"
+        onerror="this.loaderr='y';" />
+    <link rel="stylesheet" href="../styles/tilda/tilda-popup-1.1.min.css" type="text/css" media="print"
+        onload="this.media='all';" onerror="this.loaderr='y';" />
+    <noscript>
+        <link rel="stylesheet" href="../styles/tilda/tilda-popup-1.1.min.css" type="text/css" media="all" />
+    </noscript>
+    <link rel="stylesheet" href="../styles/tilda/tilda-blocks-page_reports.min.css" type="text/css" media="all"
+        onerror="this.loaderr='y';" />
+
+    <script src="../scripts/tilda/tilda-fallback-1.0.min.js" charset="utf-8" async></script>
+    <script src="../scripts/tilda/jquery-1.10.2.min.js" onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-scripts-3.0.min.js" onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-forms-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-blocks-page_reports.min.js" onerror="this.loaderr='y';"></script>
+    <!-- /tilda imports -->
+
+    <!-- my imports -->
+    <link rel="stylesheet" href="../styles/reports.css" type="text/css" media="all" />
+
+    <script src="../scripts/reports/reports.js"></script>
+    <script src="../scripts/reports/helpers.js"></script>
+    <script src="../scripts/helpers.js"></script>
+    <script src="../scripts/netutils.js"></script>
+    <script src="../scripts/typograf.js"></script>
+    <!-- /my imports -->
+</head>
+
+<body class="t-body">
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="2131374"
+        data-tilda-page-id="28489949" data-tilda-page-alias="moder-app-reports"
+        data-tilda-formskey="ec7cce305b7c6876774305fc9ea5c110" data-tilda-project-lang="RU"
+        data-tilda-project-headcode="yes">
+        <!-- начало разметки блока для создания отчёта по мероприятию -->
+        <div class="r t-rec t-rec_pt_30 t-rec_pb_30" data-animationappear="off" data-record-type="690">
+            <div class="t690">
+                <div class="t-container">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <!-- начало разметки блока c полями ввода и кнопкой для создания отчёта по мероприятию -->
+                        <div id="webinar" class="t-form__inputsbox">
+
+                            <div class="t-input-group t-input-group_in" data-input-lid="1494863045129">
+                                <div class="t-input-title t-descr t-descr_md zo__blue" data-redactor-toolbar="no"
+                                    field="li_title__1494863045129">Введите код трансляции:
+                                </div>
+                                <div class="t-input-block">
+                                    <input type="search" id="eventCodeInput" onkeydown="createReport(event)"
+                                        name="Введите код трансляции:" class="t-input js-tilda-rule zo__blue" value=""
+                                        placeholder="event_code">
+                                </div>
+                            </div>
+
+                            <div class="t-input-group t-input-group_in" data-input-lid="1494867612478">
+                                <div class="t-input-title t-descr t-descr_md zo__blue" data-redactor-toolbar="no"
+                                    field="li_title__1494867612478">Введите id книги в ДМ*:
+                                </div>
+                                <div class="t-input-block">
+                                    <input type="search" id="bookIDInput" onkeydown="createReport(event)"
+                                        name="Введите id книги в ДМ:" class="t-input js-tilda-rule zo__blue" value=""
+                                        placeholder="book_id">
+                                </div>
+                            </div>
+
+                            <div class="t-form__submit">
+                                <button type="button" class="t-submit" onclick="createReport(event)">создать
+                                    отчёт по мероприятию</button>
+                            </div>
+
+                        </div>
+                        <!-- конец разметки блока c полями ввода и кнопкой для создания отчёта по мероприятию -->
+
+                        <!-- начало разметки блока c подсказкой для полей ввода для создания отчёта по мероприятию -->
+                        <div class="t004 t-text t-text_md" style="text-align: justify; color: #0e375e">
+                            * Заполните поле с кодом трансляции и поле с кодом адресной книги ДМ для создания отчёта по
+                            мероприятию и записи данных в ДМ или только поле с кодом трансляции для создания отчёта по
+                            мероприятию.
+                        </div>
+                        <!-- конец разметки блока c подсказкой для полей ввода для создания отчёта по мероприятию -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- конец разметки блока для создания отчёта по мероприятию -->
+
+        <!-- начало разметки блока для создания отчёта по рассылкам -->
+        <div class="r t-rec t-rec_pt_30 t-rec_pb_30" data-animationappear="off" data-record-type="690">
+            <div class="t690">
+                <div class="t-container">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <!-- начало разметки блока c полями ввода и кнопкой для создания отчёта по рассылкам -->
+                        <div id="campaigns" class="t-form__inputsbox">
+
+                            <div class="t-input-group t-input-group_in" data-input-lid="1494863045129">
+                                <div class="t-input-title t-descr t-descr_md zo__blue" data-redactor-toolbar="no"
+                                    field="li_title__1494863045129">Введите дату** самой ранней рассылки:
+                                </div>
+                                <div class="t-input-block">
+                                    <input type="search" id="startDate" onkeydown="createReport(event)"
+                                        name="Введите дату** самой ранней рассылки:"
+                                        class="t-input js-tilda-rule zo__blue" value="" placeholder="start_date">
+                                </div>
+                            </div>
+
+                            <div class="t-input-group t-input-group_in" data-input-lid="1494867612478">
+                                <div class="t-input-title t-descr t-descr_md zo__blue" data-redactor-toolbar="no"
+                                    field="li_title__1494867612478">Введите дату** самой поздней рассылки:
+                                </div>
+                                <div class="t-input-block">
+                                    <input type="search" id="endDate" onkeydown="createReport(event)"
+                                        name="Введите дату** самой поздней рассылки:"
+                                        class="t-input js-tilda-rule zo__blue" value="" placeholder="end_date">
+                                </div>
+                            </div>
+
+                            <div class="t-form__submit">
+                                <button type="button" class="t-submit" onclick="createReport(event)">создать
+                                    отчёт по рассылкам</button>
+                            </div>
+
+                        </div>
+                        <!-- конец разметки блока c полями ввода и кнопкой для создания отчёта по рассылкам -->
+
+                        <!-- начало разметки блока c подсказкой для полей ввода для создания отчёта по рассылкам -->
+                        <div class="t004 t-text t-text_md" style="text-align: justify; color: #0e375e">
+                            ** Либо обе даты - непустые строки нужного формата, либо обе - пустые строки. В последнем
+                            случае дата самой поздней рассылки - текущая дата, а самой ранней - дата за 30 дней до
+                            текущей. Формат даты: ГГГГ-ММ-ДД.
+                        </div>
+                        <!-- конец разметки блока c подсказкой для полей ввода для создания отчёта по рассылкам -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- конец разметки блока для создания отчёта по рассылкам -->
+
+        <!-- начало разметки выезжающего блока для информационных сообщений -->
+        <div id="messageBlock" class="r t-rec t-rec_pt_30 t-rec_pb_30" data-animationappear="off"
+            data-record-type="690">
+            <div class="t690">
+                <div class="t-container">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div field="text" class="info-message t-text t-text_md"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- конец разметки выезжающего блока для информационных сообщений -->
+    </div>
+</body>
+
+</html>

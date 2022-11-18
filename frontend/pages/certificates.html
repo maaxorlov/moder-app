@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Moder-App</title>
+    <!-- tilda imports -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../resources/Mask_Group.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../resources/Mask_Group.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../resources/Mask_Group.png">
+    <link rel="apple-touch-startup-image" href="../resources/Mask_Group.png">
+    <link rel="stylesheet" href="../styles/tilda/tilda-grid-3.0.min.css" type="text/css" media="all"
+        onerror="this.loaderr='y';" />
+    <link href="../styles/tilda/fonts.googleapis-css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/tilda/tilda-forms-1.0.min.css" type="text/css" media="all"
+        onerror="this.loaderr='y';" />
+    <link rel="stylesheet" href="../styles/tilda/tilda-popup-1.1.min.css" type="text/css" media="print"
+        onload="this.media='all';" onerror="this.loaderr='y';" />
+    <noscript>
+        <link rel="stylesheet" href="../styles/tilda/tilda-popup-1.1.min.css" type="text/css" media="all" />
+    </noscript>
+    <link rel="stylesheet" href="../styles/tilda/tilda-blocks-page_certificates.min.css" type="text/css" media="all"
+        onerror="this.loaderr='y';" />
+
+    <script src="../scripts/tilda/tilda-fallback-1.0.min.js" charset="utf-8" async></script>
+    <script src="../scripts/tilda/jquery-1.10.2.min.js" onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-scripts-3.0.min.js" onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-forms-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
+    <script src="../scripts/tilda/tilda-blocks-page_certificates.min.js" onerror="this.loaderr='y';"></script>
+    <!-- /tilda imports -->
+
+    <!-- my imports -->
+    <link rel="stylesheet" href="../styles/cercificates.css" type="text/css" media="all" />
+
+    <script src="../scripts/certificates/certificates.js"></script>
+    <script src="../scripts/certificates/helpers.js"></script>
+    <script src="../scripts/helpers.js"></script>
+    <script src="../scripts/netutils.js"></script>
+    <script src="../scripts/typograf.js"></script>
+    <!-- /my imports -->
+</head>
+
+<body class="t-body">
+    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="2131374"
+        data-tilda-page-id="28627891" data-tilda-page-alias="moder-app-certificates"
+        data-tilda-formskey="ec7cce305b7c6876774305fc9ea5c110" data-tilda-project-lang="RU"
+        data-tilda-project-headcode="yes">
+        <div class="r t-rec t-rec_pt_30 t-rec_pb_30" data-animationappear="off" data-record-type="690">
+            <div class="t690">
+                <div class="t-container">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <!-- начало разметки блока c полями ввода и кнопкой для создания сертификатов -->
+                        <div class="t-form__inputsbox">
+
+                            <div class="t-input-group t-input-group_in" data-input-lid="1494867612478">
+                                <div class="t-input-title t-descr t-descr_md zo__blue" data-redactor-toolbar="no"
+                                    field="li_title__1494867612478">Введите id книги в ДМ:
+                                </div>
+                                <div class="t-input-block">
+                                    <input type="search" id="bookIDInput" onkeydown="createCertificates(event)"
+                                        name="Введите id книги в ДМ:" class="t-input js-tilda-rule zo__blue" value=""
+                                        placeholder="book_id">
+                                </div>
+                            </div>
+
+                            <div class="t-form__submit">
+                                <button type="button" class="t-submit" onclick="createCertificates(event)">сформировать
+                                    сертификаты</button>
+                            </div>
+
+                        </div>
+                        <!-- конец разметки блока c полями ввода и кнопкой для создания сертификатов -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- начало разметки выезжающего блока для информационных сообщений -->
+        <div id="messageBlock" class="r t-rec t-rec_pt_30 t-rec_pb_30" data-animationappear="off"
+            data-record-type="690">
+            <div class="t690">
+                <div class="t-container">
+                    <div class="t-col t-col_10 t-prefix_1">
+                        <div field="text" class="info-message t-text t-text_md"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- конец разметки выезжающего блока для информационных сообщений -->
+    </div>
+</body>
+
+</html>

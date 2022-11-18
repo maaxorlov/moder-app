@@ -1,0 +1,126 @@
+.attach__item {
+    border-bottom: #ccc solid 1px;
+    padding: 0 0 5px 0px;
+    margin: 0 0 5px 0;
+}
+
+.info-message {
+    white-space: pre-wrap;
+    word-break: break-all;
+    text-align: justify;
+    color: #0e375e;
+}
+
+.attach__item:last-of-type {
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+.attach__up {
+    cursor: pointer;
+}
+
+.attach__edit,
+.attach__delete {
+    display: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.attach__edit {
+    color: #2f7dfe;
+}
+
+.attach__delete {
+    color: #f00;
+}
+
+.attach__item--attached .attach__up {
+    display: none;
+}
+
+.attach__item--attached .attach__edit,
+.attach__item--attached .attach__delete {
+    display: inline-block;
+}
+
+.attach__input {
+    display: none;
+}
+
+.t-body {
+    margin: 0;
+}
+
+.t-rec_pb_30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.zo__blue {
+    border-color: #0e375e;
+    color: #0e375e;
+}
+
+.t-input {
+    border: 1px solid;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.t-text_md p {
+    text-align: left;
+}
+
+.t-submit {
+    color: #ffffff;
+    background-color: #0e375e;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.t-submit:hover {
+    background-color: #144c81;
+}
+
+#rec462689428 input::-webkit-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec462689428 input::-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec462689428 input:-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec462689428 input:-ms-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec462689428 textarea::-webkit-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec462689428 textarea::-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec462689428 textarea:-moz-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
+
+#rec462689428 textarea:-ms-input-placeholder {
+    color: #0e375e;
+    opacity: 0.5;
+}
